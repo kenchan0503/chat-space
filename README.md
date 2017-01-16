@@ -12,16 +12,17 @@ ruby 2.3.1p112 (2016-04-26 revision 54768) [x86_64-darwin16]
  * System dependencies：システム依存
 
  * Database creation
- * Configuration：配置 table(column, type)
- |  User--------------- |  Chat--------------- |  
+ 
+ * Configuration：配置 table(column, type)  
+ |  User　　　　　　　 |  Chat　　　　　　　 |  
  | :------------------- | :------------------- |  
- | user_id, integer---- | body, text---------- |
- |  (Primary key)------ | -------------------- |
- | pass, string-------- | image, string------- |
- | name, string-------- | thumb_image, string- |
- | nickname, string---- | video, string------- |
- | group_id, integer--- | -------------------- |
- | group_name, string-- | -------------------- |
+ | user_id, integer　　 | body, text 　　　　 |  
+ |  (Primary key)　　　 | 　　　　　　　　 　 |  
+ | pass, string 　 　 　| image, string　　 　 |  
+ | name, string　 　 　| thumb_image, string |  
+ | nickname, string 　 | video, string　 　 　 |  
+ | group_id, integer 　 | 　　　　　　　　 　 |  
+ | group_name, string | 　　　　　　　 　 　 |  
  With NOT NULL constraint  
  With uniqueness constraint  
  With foreign key constraints foreign_key: true  
