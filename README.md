@@ -18,9 +18,9 @@ ruby 2.3.1p112 (2016-04-26 revision 54768) [x86_64-darwin16]
 　　1.Group - group.rb - groups(table)  
 　　2.User - user.rb - users(table)  
 　　3.Chat - chat.rb - chats(table)  
-　　4.Interim - interrim - interrims(table)
+　　4.Group_users - group_users.rb - group_users(table)
 
- | groups (table) | interrims(table) | users (table) | chats (table) |  
+ | groups (table) | group_users (table) | users (table) | chats (table) |  
  | :- | :- | :- | :- |  
  | group_id, INT | g_id, INT <br> u_id, INT | user_id, INT |  |  
  |  |  | password, STR |  |  
