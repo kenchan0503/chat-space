@@ -24,12 +24,12 @@ ruby 2.3.1p112 (2016-04-26 revision 54768) [x86_64-darwin16]
  | :- | :- | :- | :- |  
  | group_id, INT | g_id, INT <br> u_id, INT | user_id, INT |  |  
  |  |  | password, STR |  |  
- | group_name, STR | g_name, STR <br> p_name, STR | name, STR | |  
+ | group_name, STR |  | name, STR | |  
  |  |  | nickname, STR |  |  
  | |  |  | body, TEX |  
  |  |  |  | image, STR |  
- |  | ←belongs_to :group | ←has_many :interrims | ←belongs_to :user |  
- | has_many :interrims→ | belongs_to :user→ | has_many :chats→ |  |  
+ |  | ←belongs_to :group | ←has_many :group_users | ←belongs_to :user |  
+ | has_many :group_users→ | belongs_to :user→ | has_many :chats→ |  |  
 
 
  With NOT NULL constraint  
