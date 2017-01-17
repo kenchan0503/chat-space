@@ -14,12 +14,14 @@ ruby 2.3.1p112 (2016-04-26 revision 54768) [x86_64-darwin16]
  * Database creation
 
  * Configuration：配置 table(column, type)  
+・Model  
+　　1.User - user.rb, 2.Chat - chat.rb
 
- | User | Chat |  
+ | users (table) | chat (table) |  
  | :- | :- |  
  | user_id, integer | body, text |  
  | (Primary key) |  |  
- | pass, string | image, string |  
+ | password, string | image, string |  
  | name, string | |  
  | nickname, string |  |  
  | group_id, integer |  |  
