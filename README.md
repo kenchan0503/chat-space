@@ -15,21 +15,21 @@ ruby 2.3.1p112 (2016-04-26 revision 54768) [x86_64-darwin16]
 
  * Configuration：配置 table(column, type)  
 ・Model  
-　　1.Group - group.rb  
-　　2.User - user.rb  
-　　3.Chat - chat.rb  
-(However, only one group per person)
+　　1.Group - group.rb - groups(table)  
+　　2.User - user.rb - users(table)  
+　　3.Chat - chat.rb - chats(table)  
+　　4.Interim - interrim - interrims(table)
 
- | groups (table) | users (table) | chats (table) |  
- | :- | :- | :- |  
- | group_id, integer | user_id, integer |  |  
- |  | password, string |  |  
- | group_name, string | name, string | |  
- |  | nickname, string |  |  
- | |  | body, text |  
- |  |  | image, string |  
- |  | ←belongs_to :groups | ←belongs_to :users |  
- | has_many :users→ | has_many :chats→ |  |  
+ | groups (table) | interrims(table) | users (table) | chats (table) |  
+ | :- | :- | :- | :- |  
+ | group_id, INT | g_id, INT <br> u_id, INT | user_id, INT |  |  
+ |  |  | password, STR |  |  
+ | group_name, STR | g_name, STR <br> p_name, STR | name, STR | |  
+ |  |  | nickname, STR |  |  
+ | |  |  | body, TEX |  
+ |  |  |  | image, STR |  
+ |  | ←belongs_to :group | ←has_many :interrims | ←belongs_to :user |  
+ | has_many :interrims→ | belongs_to :user→ | has_many :chats→ |  |  
 
 
  With NOT NULL constraint  
