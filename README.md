@@ -15,17 +15,22 @@ ruby 2.3.1p112 (2016-04-26 revision 54768) [x86_64-darwin16]
 
  * Configuration：配置 table(column, type)  
 ・Model  
-　　1.User - user.rb, 2.Chat - chat.rb
+　　1.Group - group.rb  
+　　2.User - user.rb  
+　　3.Chat - chat.rb  
+(However, only one group per person)
 
- | users (table) | chat (table) |  
- | :- | :- |  
- | user_id, integer | body, text |  
- | (Primary key) |  |  
- | password, string | image, string |  
- | name, string | |  
- | nickname, string |  |  
- | group_id, integer |  |  
- | group_name, string |  |  
+ | groups (table) | users (table) | chats (table) |  
+ | :- | :- | :- |  
+ | group_id, integer | user_id, integer |  |  
+ |  | password, string |  |  
+ | group_name, string | name, string | |  
+ |  | nickname, string |  |  
+ | |  | body, text |  
+ |  |  | image, string |  
+ |  | ←belongs_to :groups | ←belongs_to :users |  
+ | has_many :users→ | has_many :chats→ |  |  
+
 
  With NOT NULL constraint  
  With uniqueness constraint  
