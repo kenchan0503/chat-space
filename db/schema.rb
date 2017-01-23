@@ -10,17 +10,9 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170122123733) do
+ActiveRecord::Schema.define(version: 20170123142815) do
 
   create_table "chats", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
-    t.integer  "group_id"
-    t.string   "group_name"
-    t.integer  "g_id"
-    t.integer  "u_id"
-    t.integer  "user_id"
-    t.string   "password"
-    t.string   "name"
-    t.string   "nickname"
     t.text     "body",       limit: 65535
     t.string   "image"
     t.datetime "created_at"

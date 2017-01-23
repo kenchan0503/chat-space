@@ -5,8 +5,3 @@ Rails.application.routes.draw do
   resources :users
   resources :chats
 end
-
-
-# resources :group, shallow: true do   # memo
-#   resources :user
-# end
