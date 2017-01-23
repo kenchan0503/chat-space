@@ -29,7 +29,7 @@ ruby 2.3.1p112 (2016-04-26 revision 54768) [x86_64-darwin16]
  | |  |  | body, TEX |  
  |  |  |  | image, STR |  
  |  | ←belongs_to :group | ←has_many :group_users | ←belongs_to :user |  
- | has_many :group_users→ | belongs_to :user→ | has_many :chats→ |  |  
+ | has_many :group_users→ | belongs_to :user→ | has_many :chat→ |  |  
 
 
  With NOT NULL constraint  
