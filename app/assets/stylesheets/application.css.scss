@@ -36,6 +36,8 @@ body {
   background-color: white;
 }
 
+$leftBlockWidth: 260px;
+$leftBlockColor: #FFF;
 .left-block {
   width: 300px;
   height: 100%;
@@ -43,17 +45,17 @@ body {
   float: left;
     &__left-upper {
         height: 22px;
-        width: 260px;
+        width: $leftBlockWidth:;
         background-color: #253141;
         font-weight: bold;
-        color: #FFFFFF;
+        color: $leftBlockColor;
         font-size: 16px;
         padding: 35px 20px 35px 20px;
     }
     &__left-lower {
-      width: 260px;
+      width: $leftBlockWidth:;
       padding: 0 20px;
-      color: #FFFFFF;
+      color: $leftBlockColor;
         .group_name {
             font-size: 15px;
             margin-bottom: 5px;
@@ -96,14 +98,14 @@ body {
             width: 450px;
             height: 20px;
             font-size: 20px;
-            color: #333333;
-            margin: 0 0 15px 0;
+            color: #333;
+            margin-bottom: 15px;
           }
         &--surname_name {
             width: 450px;
             height: 20px;
             font-size: 12px;
-            color: #999999;
+            color: #999;
           }
     }
     &__right-block-lower {
@@ -122,12 +124,12 @@ body {
         }
         &--p {
             font-size: 12px;
-            color: #999999;
+            color: #999;
             float: left;
         }
         &--chachachat {
             font-size: 14px;
-            margin: 10px 0 40px 0;
+            margin: 10px 0 40px;
             color: #434A54;
             clear: left;
         }
@@ -143,7 +145,7 @@ footer {
   height: 50px;
   padding: 20px 40px;
   overflow: hidden;
-  background-color: #AAAAAA;
+  background-color: #AAA;
     &__type-message {
       width: -webkit-calc(100% - 135px);
       width: calc(100% - 135px);
