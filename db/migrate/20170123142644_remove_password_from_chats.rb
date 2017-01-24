@@ -1,5 +1,5 @@
 class RemovePasswordFromChats < ActiveRecord::Migration[5.0]
   def change
-    remove_column :chats, :password, :string
+    rename_column :chats, :password, :string
   end
 end
