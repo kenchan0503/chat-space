@@ -209,7 +209,7 @@ body {
   width: 260px;
   background-color: #253141;
   font-weight: bold;
-  color: #FFFFFF;
+  color: #FFF;
   font-size: 16px;
   padding: 35px 20px 35px 20px;
 }
@@ -218,7 +218,7 @@ body {
 .left-lower {
   width: 260px;
   padding: 0 20px;
-  color: #FFFFFF;
+  color: #FFF;
 }
 /* line 60, /Users/kawaikatsuharu/projects/chat-space/app/assets/stylesheets/application.scss */
 .left-lower .group_name {
@@ -264,15 +264,15 @@ body {
   width: 450px;
   height: 20px;
   font-size: 20px;
-  color: #333333;
-  margin: 0 0 15px 0;
+  color: #333;
+  margin-bottom: 15px;
 }
 /* line 99, /Users/kawaikatsuharu/projects/chat-space/app/assets/stylesheets/application.scss */
 .right-block-upper .surname_name {
   width: 450px;
   height: 20px;
   font-size: 12px;
-  color: #999999;
+  color: #999;
 }
 
 /* line 106, /Users/kawaikatsuharu/projects/chat-space/app/assets/stylesheets/application.scss */
@@ -296,14 +296,14 @@ body {
 /* line 120, /Users/kawaikatsuharu/projects/chat-space/app/assets/stylesheets/application.scss */
 p {
   font-size: 12px;
-  color: #999999;
+  color: #999;
   float: left;
 }
 
 /* line 125, /Users/kawaikatsuharu/projects/chat-space/app/assets/stylesheets/application.scss */
 .chachachat {
   font-size: 14px;
-  margin: 10px 0 40px 0;
+  margin: 10px 0 40px;
   color: #434A54;
   clear: left;
 }
@@ -317,7 +317,7 @@ footer {
   height: 50px;
   padding: 20px 40px;
   overflow: hidden;
-  background-color: #AAAAAA;
+  background-color: #AAA;
 }
 /* line 141, /Users/kawaikatsuharu/projects/chat-space/app/assets/stylesheets/application.scss */
 footer .type-message {
