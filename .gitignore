@@ -15,3 +15,6 @@ test/
 *app/assets/stylesheets/bootstrap.scss
 *bootstrap/bootstrap.scss
 *app/assets/javascripts/chats.coffee
+*SHOW
+*app/assets/stylesheets/a_pplication.scss
+*app/views/layouts/ap__plication.html.erb
