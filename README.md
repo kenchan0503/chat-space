@@ -22,11 +22,11 @@ ruby 2.3.1p112 (2016-04-26 revision 54768) [x86_64-darwin16]
 
  | groups (table) | group_users (table) | users (table) | chats (table) |  
  | :- | :- | :- | :- |  
- | group_id, INT | g_id, INT <br> u_id, INT | user_id, INT |  |  
+ | group_id, INT | group_intermediate_id, INT <br> user_intermediate_id, INT | user_id, INT |  |  
  |  |  | password, STR |  |  
  | group_name, STR |  | name, STR | |  
  |  |  | nickname, STR |  |  
- | |  |  | body, TEX |  
+ |  |  |  | body, TEX |  
  |  |  |  | image, STR |  
  |  | ←belongs_to :group | ←has_many :group_users | ←belongs_to :user |  
  | has_many :group_users→ | belongs_to :user→ | has_many :chat→ |  |  

@@ -7,6 +7,7 @@
       = javascript_include_tag 'application', 'data-turbolinks-track' => true
       = csrf_meta_tags
   %body
+  = yield
     %header
       チャットグループが作成されました。
     .contents.clearfix
@@ -20,31 +21,26 @@
             %li.group_name group_name
             %li.last_chat last_chat
       .right-block
-        .right-block-upper
-          .edit-bottom
+        .__right-block-upper
+          .--edit-bottom
             Edit
           %ul
             %li.group_name group_name
             %li.surname_name
               Member：#{@name}
-        .right-block-lower
-          = yield
+        .__right-block-lower
           .surname_name Member
-          %p reg_time
-          .chachachat
+          %--p reg_time
+          .--chachachat
             You can say what you like.
-          .surname_name Member
-          %p reg_time
-          .chachachat
+          .--surname_name Member
+          %--p reg_time
+          .--chachachat
             Go forward. Without fear of losing.
-          .surname_name Member
-          %p reg_time
-          .chachachat
+          .--surname_name Member
+          %--p reg_time
+          .-chachachat
             You can say what you like.
         %footer
-          .send-bottom Send
-          .type-message
-            Commit with your message.
-            %i.fa.fa-photo.fa-fw
-            %div{:image => ""}
-              %img{:height => "50", :width => "50"}/
+          .__send-bottom Send
+          .__type-message
