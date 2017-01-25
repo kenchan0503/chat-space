@@ -1,0 +1,32 @@
+footer {
+  width: -webkit-calc(100% - 380px);
+  width: calc(100% - 380px);
+  position: absolute;
+  bottom: 0;
+  height: 50px;
+  padding: 20px 40px;
+  overflow: hidden;
+  background-color: #AAA;
+    &__type-message {
+      width: -webkit-calc(100% - 135px);
+      width: calc(100% - 135px);
+      height: 50px;
+      line-height: 50px;
+      padding-left: 10px;
+      font-size: 16px;
+      color: #434A54;
+      background-color: white;
+    }
+    &__send-bottom {
+      width: 110px;
+      height: 50px;
+      line-height: 50px;
+      background-color: #38AEF0;
+      color: white;
+      margin-left: 15px;
+      text-align: center;
+      position: absolute;
+      right: 40px;
+      bottom: 20px;
+    }
+}

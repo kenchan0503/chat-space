@@ -1,0 +1,40 @@
+li {
+  list-style: none;
+}
+
+html {
+  height:100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  height: 30px;
+  line-height: 30px;
+  background-color: #38AEF0;
+  color: white;
+  text-align: center;
+}
+
+body {
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+
+.contents {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin-top: 30px;
+  background-color: white;
+}
+
+/*
+*= require font-awesome
+*= require_tree .
+*= require_self
+*/
