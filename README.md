@@ -23,12 +23,12 @@ ruby 2.3.1p112 (2016-04-26 revision 54768) [x86_64-darwin16]
  | groups (table)          | group_users (table)             | users (table)           | chats (table)      |  
  | group_id, INT           | group_id, INT <br> user_id, INT | user_id, INT            |                    |  
  |                         |                                 | password, STR           |                    |  
- | group_name, STR         |                                 | name, STR               |                    |  
+ | name, STR               |                                 | name, STR               |                    |  
  |                         |                                 | nickname, STR           |                    |  
  |                         |                                 |                         | body, TEX          |  
  |                         |                                 |                         | image, STR         |  
- |                         | ←belongs_to :group             | ←has_many :group_users | ←belongs_to :user |  
- | has_many :group_users→ | belongs_to :user→              | has_many :chats→       |                    |  
+ |                         | ←belongs_to :group      　       | ←has_many :group_users　 | ←belongs_to :user |  
+ | has_many :group_users→　 | belongs_to :user→  　            | has_many :chats→   　    |                    |  
  |                         |                                 | uniqueness              | uniqueness         |  
  |                         | NOT NULL                        | NOT NULL                | NOT NULL           |  
  | With index              | With index                      | With index              | With index         |  
