@@ -1,0 +1,34 @@
+%header
+  チャットグループが作成されました。
+.contents.clearfix
+  .left-block
+    .left-upper
+      name
+      %i.fa.fa-gear.fa-fw
+      %i.fa.fa-pencil-square-o.fa-fw
+    .left-lower
+      %ul
+        %li.group_name group_name
+        %li.last_chat last_chat
+  .right-block
+    .right-block-upper
+      .edit-bottom
+        Edit
+      %ul
+        %li.group_name group_name
+        %li.surname_name
+          Member：#{@name}
+    .right-block-lower
+      .surname_name Member
+      %p reg_time
+      .chachachat
+      - @chats.each do | chat |
+        %p= chat.body
+    %footer
+      .send-bottom Send
+      .type-message
+        Commit with your message.
+        / <button class="btn edit">
+        %i.fa.fa-photo.fa-fw
+        / </button>
+      %div{:src => "imag"}

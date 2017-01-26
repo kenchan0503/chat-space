@@ -2,45 +2,9 @@
 %html
   %head
     %meta{:content => "text/html; charset=UTF-8", "http-equiv" => "Content-Type"}/
-      %title ChatSpace
-      = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true
-      = javascript_include_tag 'application', 'data-turbolinks-track' => true
-      = csrf_meta_tags
+    %title ChatSpace
+    = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true
+    = javascript_include_tag 'application', 'data-turbolinks-track' => true
+    = csrf_meta_tags
   %body
   = yield
-    %header
-      チャットグループが作成されました。
-    .contents.clearfix
-      .left-block
-        .left-upper
-          name
-          %i.fa.fa-gear.fa-fw
-          %i.fa.fa-pencil-square-o.fa-fw
-        .left-lower
-          %ul
-            %li.group_name group_name
-            %li.last_chat last_chat
-      .right-block
-        .__right-block-upper
-          .--edit-bottom
-            Edit
-          %ul
-            %li.group_name group_name
-            %li.surname_name
-              Member：#{@name}
-        .__right-block-lower
-          .surname_name Member
-          %--p reg_time
-          .--chachachat
-            You can say what you like.
-          .--surname_name Member
-          %--p reg_time
-          .--chachachat
-            Go forward. Without fear of losing.
-          .--surname_name Member
-          %--p reg_time
-          .-chachachat
-            You can say what you like.
-        %footer
-          .__send-bottom Send
-          .__type-message
