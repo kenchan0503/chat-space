@@ -9,8 +9,11 @@ class ChatsController < ApplicationController
   end
   def destroy
   end
+
   private
+
   def chats_params
     params.permit(:name, :body)
   end
+  
 end

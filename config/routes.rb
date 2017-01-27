@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
+  devise_for :users
   resources :groups
-  resources :group_users
   resources :users
   resources :chats
 end
