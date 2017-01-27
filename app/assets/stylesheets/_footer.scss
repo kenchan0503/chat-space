@@ -6,8 +6,8 @@ footer {
   height: 50px;
   padding: 20px 40px;
   overflow: hidden;
-  background-color: #AAA;
-    &__type-message {
+  background-color: #AAAAAA;
+    .type-message {
       width: -webkit-calc(100% - 135px);
       width: calc(100% - 135px);
       height: 50px;
@@ -17,7 +17,10 @@ footer {
       color: #434A54;
       background-color: white;
     }
-    &__send-bottom {
+    .icon-picture icon-4x {
+        margin-left: auto;
+    }
+    .send-bottom {
       width: 110px;
       height: 50px;
       line-height: 50px;

@@ -5,58 +5,58 @@
   width: calc(100% - 300px);
   background-color: white;
   float: left;
-    &__right-block-upper {
-      height: 55px;
-      padding: 35px 40px 0 40px;
-        &--edit-bottom {
-            width: 68px;
-            height: 40px;
-            line-height: 40px;
-            font-size: 12px;
-            color: #38AEF0;
-            margin-top: -8px;
-            padding: auto 20px;
-            float: right;
-            border: 1px solid #38AEF0;
-            text-align: center
-        }
-        &--group_name {
-            width: 450px;
-            height: 20px;
-            font-size: 20px;
-            color: #333;
-            margin-bottom: 15px;
-          }
-        &--surname_name {
-            width: 450px;
-            height: 20px;
-            font-size: 12px;
-            color: #999;
-          }
+}
+.edit-bottom {
+  width: 68px;
+  height: 40px;
+  line-height: 40px;
+  font-size: 12px;
+  color: #38AEF0;
+  margin-top: -8px;
+  padding: auto 20px;
+  float: right;
+  border: 1px solid #38AEF0;
+  text-align: center
+}
+.right-block-upper {
+  height: 55px;
+  padding: 35px 40px 0 40px;
+    .group_name {
+        width: 450px;
+        height: 20px;
+        font-size: 20px;
+        color: #333333;
+        margin: 0 0 15px 0;
+      }
+    .surname_name {
+        width: 450px;
+        height: 20px;
+        font-size: 12px;
+        color: #999999;
+      }
+}
+.right-block-lower {
+  height: -webkit-calc(100% - 227px);
+  height: calc(100% - 227px);
+  border-top: 1px solid #eeeeee;
+  background-color: #FFFAFA;
+  padding: 46px 40px 0 40px;
+    .surname_name {
+  font-size: 16px;
+  padding-right: 10px;
+  font-weight: bold;
+  color: #434A54;
+  float: left;
     }
-    &__right-block-lower {
-      height: -webkit-calc(100% - 227px);
-      height: calc(100% - 227px);
-      border-top: 1px solid #eeeeee;
-      background-color: #FFFAFA;
-      padding: 46px 40px 0 40px;
-        }
-        &--surname_name {
-            font-size: 16px;
-            padding-right: 10px;
-            font-weight: bold;
-            color: #434A54;
-            float: left;
-        }
-        &--p {
-            font-size: 12px;
-            color: #999;
-            float: left;
-        }
-        &--chachachat {
-            font-size: 14px;
-            margin: 10px 0 40px;
-            color: #434A54;
-            clear: left;
-        }
+   p {
+      font-size: 12px;
+      color: #999999;
+      float: left;
+      }
+   .chachachat {
+        font-size: 14px;
+        margin: 10px 0 40px 0;
+        color: #434A54;
+        clear: left;
+      }
 }

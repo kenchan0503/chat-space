@@ -18,3 +18,5 @@ test/
 *SHOW
 *app/assets/stylesheets/a_pplication.scss
 *app/views/layouts/ap__plication.html.erb
+
+app/views/chats/index.html_.erb

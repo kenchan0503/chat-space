@@ -5,17 +5,21 @@ $leftBlockColor: #FFF;
   height: 100%;
   background-color: #2f3e51;
   float: left;
-    &__left-upper {
-        height: 22px;
-        width: $leftBlockWidth:;
-        background-color: #253141;
-        font-weight: bold;
-        color: $leftBlockColor;
-        font-size: 16px;
-        padding: 35px 20px 35px 20px;
+    .left-upper {
+      height: 22px;
+      width: $leftBlockWidth;
+      background-color: #253141;
+      font-weight: bold;
+      color: $leftBlockColor;
+      font-size: 16px;
+      padding: 35px 20px 35px 20px;
+        .btn icon-edit icon-4x {
+        }
+        .btn icon-cog icon-4x {
+        }
     }
-    &__left-lower {
-      width: $leftBlockWidth:;
+    .left-lower {
+      width: $leftBlockWidth;
       padding: 0 20px;
       color: $leftBlockColor;
         .group_name {

@@ -19,16 +19,15 @@
         %li.surname_name
           Member：#{@name}
     .right-block-lower
-      .surname_name Member
-      %p reg_time
-      .chachachat
-      - @chats.each do | chat |
-        %p= chat.body
+      - @chats.each do |chat|
+        .surname_name Member
+        %p reg_time
+        .chachachat
+          = simple_format(chat.body)
     %footer
       .send-bottom Send
       .type-message
         Commit with your message.
-        / <button class="btn edit">
         %i.fa.fa-photo.fa-fw
-        / </button>
-      %div{:src => "imag"}
+        %div{:image => ""}
+        %img{:height => "50", :width => "50"}/
