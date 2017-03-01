@@ -5,6 +5,7 @@ $leftBlockColor: #FFF;
   height: 100%;
   background-color: #2f3e51;
   float: left;
+  position: absolute;
     .left-upper {
       height: 22px;
       width: $leftBlockWidth;
@@ -13,9 +14,17 @@ $leftBlockColor: #FFF;
       color: $leftBlockColor;
       font-size: 16px;
       padding: 35px 20px 35px 20px;
-        .btn icon-edit icon-4x {
+      // position: relative;
+      // float; right;
+        i.fa.fa-gear.fa-fw {
+            float: right;
+          .btn icon-cog icon-4x {
+          }
         }
-        .btn icon-cog icon-4x {
+        i.fa.fa-pencil-square-o.fa-fw {
+          float: right;
+          .btn icon-edit icon-4x {
+          }
         }
     }
     .left-lower {
