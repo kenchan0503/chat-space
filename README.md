@@ -20,18 +20,19 @@ ruby 2.3.1p112 (2016-04-26 revision 54768) [x86_64-darwin16]
 　　3.Chat - chat.rb - chats(table)  
 　　4.Group_users - group_users.rb - group_users(table)
 
- | groups (table)          | group_users (table)             | users (table)           | chats (table)      |  
- | id, INT                 | group_id, INT <br> user_id, INT | id, INT                 |                    |  
- |                         |                                 | password, STR           |                    |  
- | name, STR               |                                 | name, STR               |                    |  
- |                         |                                 | nickname, STR           |                    |  
- |                         |                                 |                         | body, TEX          |  
- |                         |                                 |                         | image, STR         |  
- |                         | ←belongs_to :group               | ←has_many :group_users   | ←belongs_to :user |  
- | has_many :group_users→   | belongs_to :user→                | has_many :chats→         |                    |  
- |                         |                                 | uniqueness              | uniqueness         |  
- |                         | NOT NULL                        | NOT NULL                | NOT NULL           |  
- | With index              | With index                      | With index              | With index         |  
+|groups (table)|group_users (table)|users (table)|chats (table)|  
+|:--:|:--:|:--:|:--:|  
+|id, INT|group_id, INT,<br> user_id, INT|id, INT||  
+|||password, STR||  
+|name, STR||name, STR||  
+|||nickname, STR||  
+||||body, TEX|  
+||||image, STR|  
+||←belongs_to :group|←has_many :group_users|←belongs_to :user|  
+|has_many :group_users→|belongs_to :user→|has_many :chats→||  
+|||uniqueness|uniqueness|  
+||NOT NULL|NOT NULL|NOT NULL|  
+|With index|With index|With index|With index|  
 
  With foreign key constraints foreign_key: true  
 
